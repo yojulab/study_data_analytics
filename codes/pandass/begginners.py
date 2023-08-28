@@ -1,5 +1,7 @@
 import pandas as pd
 
+df_TFD = pd.read_csv('datasets/TitanicFromDisaster_train.csv')
+
 double_list = [
              [1000, '과자','2019-12-31','반품'],
              [2000, '음료', '2020-03-02', '정상'],

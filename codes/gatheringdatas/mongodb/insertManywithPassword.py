@@ -21,7 +21,8 @@ data = [
 ]
 
 # Connect to MongoDB
-client = MongoClient(host, username=username, password=password)
+client = MongoClient(host)
+# client = MongoClient(host, username=username, password=password)
 db = client[database_name]
 collection = db[collection_name]
 

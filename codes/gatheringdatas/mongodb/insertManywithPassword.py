@@ -1,8 +1,9 @@
-# edit ..\bin\mongod.cfg
-# bindIp: 0.0.0.0
+# vi ..\bin\mongod.cfg
+#   bindIp: 0.0.0.0
 # > use admin       # in MonogoDB
-# > db.createUser({user: "yojulab",pwd: "!yojulab*",
+# admin> db.createUser({user: "yojulab",pwd: "!yojulab*",
 #   roles: [{ role: "readWrite", db: "study_test" }]})
+# admin> db.getUsers()
 
 from pymongo import MongoClient
 
